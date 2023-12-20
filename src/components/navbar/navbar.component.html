@@ -15,10 +15,10 @@
     >
       <ul>
         <li class="mb-5">
-          <a routerLink="/home" routerLinkActive="active" i18n>الرئيسية</a>
+          <a routerLink="/home" routerLinkActive="active" i18n>Home</a>
         </li>
         <li class="mb-5">
-          <a routerLink="/about-us" routerLinkActive="active" i18n>عن الشركة</a>
+          <a routerLink="/about-us" routerLinkActive="active" i18n>About Us</a>
         </li>
         @if (isAr()) { @for (navlink of navlinks; track navlink.id) {
         <li
@@ -60,8 +60,8 @@
         </mat-menu>
         } }
         <li class="mb-5">
-          <a routerLink="/contact-us" routerLinkActive="active" i18n
-            >اتصل بنا</a
+          <a routerLink="/contact-us" routerLinkActive="active" i18n>
+            Contact Us</a
           >
         </li>
       </ul>
@@ -81,10 +81,12 @@
     <div class="hidden lg:flex">
       <ul class="flex gap-5">
         <li>
-          <a routerLink="/home" routerLinkActive="active" i18n>الرئيسية</a>
+          <a routerLink="/home" routerLinkActive="active" i18n>Home</a>
         </li>
         <li>
-          <a routerLink="/about-us" routerLinkActive="active" i18n>عن الشركة</a>
+          <a routerLink="/about-us" routerLinkActive="active" i18n>
+            About Us
+          </a>
         </li>
         @if (isAr()) { @for (navlink of navlinks; track navlink.id) {
         <li mat-button [matMenuTriggerFor]="menu" class="flex gap-1 navlink">
@@ -119,8 +121,8 @@
         } }
 
         <li>
-          <a routerLink="/contact-us" routerLinkActive="active" i18n
-            >اتصل بنا</a
+          <a routerLink="/contact-us" routerLinkActive="active" i18n>
+            Contact Us</a
           >
         </li>
       </ul>
@@ -128,7 +130,7 @@
 
     <!-- Language -->
     <div class="flex cursor-pointer" (click)="changeLanguage()">
-      <p class="mx-2" i18n>En</p>
+      <p class="mx-2" i18n>العربية</p>
       <span class="material-symbols-outlined"> globe </span>
     </div>
   </div>

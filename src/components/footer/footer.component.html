@@ -10,8 +10,8 @@
         priority
       />
       <p i18n>
-        إذا كنت ترغب في الحصول على خدمة من رؤية الأشياء، يمكنك الاتصال بنا أو
-        عبر وسائل التواصل الخاصة بنا
+        If you would like to get the service of Vision Things, you can contact
+        us Or through our social media
       </p>
       <div class="flex gap-2">
         @for (item of socialMedia; track item.id) {
@@ -29,7 +29,7 @@
 
     <!-- Quick links -->
     <div>
-      <h4 class="text-white text-xl mb-5" i18n>روابط سريعة</h4>
+      <h4 class="text-white text-xl mb-5" i18n>Quick Links</h4>
       <div class="flex flex-col gap-5">
         @for (link of quicklinks; track link.id) {
         <a [routerLink]="link.route">
@@ -37,14 +37,14 @@
         </a>
         }
         <a href="https://ccm.vision-things.com">
-          <p i18n>عقد الكاميرات</p>
+          <p i18n>Cameras Contract</p>
         </a>
       </div>
     </div>
 
     <!-- Terms & Conditions -->
     <div>
-      <h4 class="text-white text-xl mb-5" i18n>الأحكام والشروط</h4>
+      <h4 class="text-white text-xl mb-5" i18n>Terms & Conditions</h4>
       <div class="flex flex-col gap-5">
         @for (term of terms; track term.id) {
         <a [routerLink]="term.route">
@@ -56,15 +56,13 @@
 
     <!-- Have a question -->
     <div>
-      <h4 i18n class="text-white text-xl mb-5">لديك سؤال؟</h4>
+      <h4 i18n class="text-white text-xl mb-5">Do you have a question?</h4>
       <div class="flex flex-col gap-5">
         <div class="flex gap-3">
           <span class="material-symbols-outlined text-white">
             location_searching
           </span>
-          <p i18n>
-            المملكة العربية السعودية، جدة، حي الزهراء - الرمز البريدي: 23522
-          </p>
+          <p i18n>The Kingdom of Saudi Arabia - Jeddah - Al-Zahraa District</p>
         </div>
         <div class="flex gap-3">
           <span class="material-symbols-outlined text-white"> call </span>
@@ -78,6 +76,6 @@
     </div>
   </div>
   <div class="pt-10 mt-10" style="border-top: 2px solid #51a29d">
-    <p class="text-center" i18n>© 2023 جميع الحقوق محفوظة لشركة رؤية الأشياء</p>
+    <p class="text-center" i18n>Vision Things © 2023 All Rights Reserved</p>
   </div>
 </footer>

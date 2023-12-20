@@ -38,21 +38,21 @@ export class FooterComponent {
   ];
 
   quicklinks = [
-    { id: 1, title: $localize`الرئيسية`, route: '/home' },
-    { id: 2, title: $localize`عن الشركة`, route: '/about-us' },
-    { id: 3, title: $localize`اتصل بنا`, route: '/contact-us' },
+    { id: 1, title: $localize`Home`, route: '/home' },
+    { id: 2, title: $localize`About Us`, route: '/about-us' },
+    { id: 3, title: $localize`Contact Us`, route: '/contact-us' },
   ];
 
   terms = [
     {
       id: 1,
-      title: $localize`الأحكام والشروط`,
+      title: $localize`Terms & Conditions`,
       route: '/terms-and-conditions',
     },
-    { id: 2, title: $localize`سياسة الخصوصية`, route: '/privacy-policy' },
+    { id: 2, title: $localize`Privacy Policy`, route: '/privacy-policy' },
     {
       id: 3,
-      title: $localize`سياسة الاستبدال والاسترجاع`,
+      title: $localize`Return & Exchange Policy`,
       route: '/return-policy',
     },
   ];

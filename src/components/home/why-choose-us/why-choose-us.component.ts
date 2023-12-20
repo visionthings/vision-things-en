@@ -11,28 +11,30 @@ export class WhyChooseUsComponent {
   items = [
     {
       id: 'price',
-      title: $localize`السعر أفضل من سعر السوق`,
-      description: $localize`تقدم رؤية الأشياء دائما أفضل الأسعار مقارنة بالسوق المحلي والعالمي`,
+      title: `The price is better than the market price`,
+      description: `Seeing Things always offers the best prices compared to the local and international market`,
     },
     {
       id: 'technical-support',
-      title: $localize`تقديم الدعم الفني للمعدات التقنية`,
-      description: $localize`كما نقدم الدعم الفني والمساعدة والزيارات لحل المشاكل`,
+      title: `Providing technical support for technical equipment`,
+      description:
+        'We also provide technical support, assistance and visits to solve problems',
     },
     {
       id: 'supply',
-      title: $localize`توريد المعدات التقنية الجديدة`,
-      description: $localize`توفر شركة رؤية الأشياء حلولاً تقنية جديدة تمامًا وأفضل دائمًا`,
+      title: `Supply of new technical equipment`,
+      description: `Vision Things provides brand new and always better technology solutions`,
     },
     {
       id: 'solutions',
-      title: $localize`تقديم الحلول التقنية المناسبة`,
-      description: $localize`نحن دائمًا نختار ونوصي بالاختيار الأفضل والحلول المناسبة لعملائنا`,
+      title: `Providing appropriate technical solutions`,
+      description: `We always select and recommend the best choice and suitable solutions for our clients`,
     },
     {
       id: 'experience',
-      title: $localize`خبرة الشركة في المجال التقني`,
-      description: $localize`تتمتع الشركة بالخبرة الكافية في مجالات تكنولوجيا المعلومات على أيدي مهندسينا`,
+      title: `The company's experience in the technical field`,
+      description:
+        'The company has sufficient experience in the fields of information technology at the hands of our engineers',
     },
   ];
 }

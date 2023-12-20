@@ -81,12 +81,10 @@ export class ContactUsFormComponent {
       .subscribe({
         next: () => {
           this.contactForm.reset();
-          this.openDialog($localize`تم الإرسال بنجاح، شكرا لتواصلكم معنا.`);
+          this.openDialog('Your message has been sent successfully');
         },
         error: () => {
-          this.openDialog(
-            $localize`تعذر الإرسال في الوقت الحالي، يرجى المحاولة في وقت آخر.`
-          );
+          this.openDialog('Failed to send message, please try again later');
         },
       });
   }

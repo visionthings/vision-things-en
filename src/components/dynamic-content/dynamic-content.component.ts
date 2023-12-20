@@ -49,7 +49,6 @@ export class DynamicContentComponent implements OnInit, OnChanges {
   secondarySection: any = {};
   textSection: any = {};
   companiesSection: any = {};
-
   primarySectionContent: any;
   secondarySectionContent: any;
   textSectionContent: any;

@@ -1,5 +1,5 @@
 import { NgOptimizedImage } from '@angular/common';
-import { Component, LOCALE_ID, Inject } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-about-header',
@@ -8,13 +8,4 @@ import { Component, LOCALE_ID, Inject } from '@angular/core';
   templateUrl: './about-header.component.html',
   styleUrl: './about-header.component.scss',
 })
-export class AboutHeaderComponent {
-  constructor(@Inject(LOCALE_ID) public locale: string) {}
-  isAr(): boolean {
-    if (this.locale === 'ar-SA') {
-      return true;
-    } else {
-      return false;
-    }
-  }
-}
+export class AboutHeaderComponent {}

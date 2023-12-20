@@ -14,18 +14,13 @@
       "sourceRoot": "src",
       "prefix": "app",
       "i18n": {
-        "sourceLocale": "ar-SA",
-        "locales": {
-          "en-US": {
-            "translation": "src/locale/translation.en.xlf"
-          }
-        }
+        "sourceLocale": "en-US"
       },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "localize": true,
+            "localize": false,
             "outputPath": "dist/vision-things",
             "index": "src/index.html",
             "browser": "src/main.ts",

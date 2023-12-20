@@ -11,18 +11,19 @@ export class OurServicesComponent {
   services = [
     {
       id: 'research',
-      title: $localize`البحث والتطوير`,
-      description: $localize`تعمل الشركة على تقديم أحدث الحلول التقنية من خلال البحث والتطوير في المجالات التالية: الذكاء الاصطناعي ورؤية الكمبيوتر والروبوتات والواقع المعزز وانترنت الأشياء.`,
+      title: $localize`Research & Development`,
+      description: `The company works to provide the latest technical solutions through research and development in the following fields: artificial intelligence, computer vision, robotics, augmented reality, and the Internet of Things.`,
     },
     {
       id: 'network',
-      title: $localize`حلول الشبكات`,
-      description: $localize`تصميم امتداد الشبكة هو عملية تخطيط وتنفيذ نظام شبكة جديد أو محدث. وهذا يشمل تحديد احتياجات العمل`,
+      title: 'Network Solutions',
+      description: `Network extension design is the process of planning and implementing a new or updated network system. This includes identifying business needs`,
     },
     {
       id: 'business',
-      title: $localize`حلول الأعمال`,
-      description: $localize`إنشاء المواقع الإلكترونية والحلول التقنية لتسهيل عمليات إدارة الأعمال وجعلها أكثر احترافية إدارياً`,
+      title: `Business Solutions`,
+      description:
+        'Creating websites and technical solutions to facilitate business management processes and make them more administratively professional',
     },
   ];
 }
