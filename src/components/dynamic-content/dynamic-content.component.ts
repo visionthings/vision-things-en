@@ -77,10 +77,10 @@ export class DynamicContentComponent
           (content: any) => content.content_type === 'companies'
         );
 
-        this.primarySectionContent = this.primarySection?.content_ar;
-        this.secondarySectionContent = this.secondarySection?.content_ar;
-        this.textSectionContent = this.textSection?.content_ar;
-        this.companiesSectionContent = this.companiesSection?.content_ar;
+        this.primarySectionContent = this.primarySection?.content_en;
+        this.secondarySectionContent = this.secondarySection?.content_en;
+        this.textSectionContent = this.textSection?.content_en;
+        this.companiesSectionContent = this.companiesSection?.content_en;
       },
     });
   }
@@ -100,10 +100,10 @@ export class DynamicContentComponent
       (content: any) => content.content_type === 'companies'
     );
 
-    this.primarySectionContent = this.primarySection?.content_ar;
-    this.secondarySectionContent = this.secondarySection?.content_ar;
-    this.textSectionContent = this.textSection?.content_ar;
-    this.companiesSectionContent = this.companiesSection?.content_ar;
+    this.primarySectionContent = this.primarySection?.content_en;
+    this.secondarySectionContent = this.secondarySection?.content_en;
+    this.textSectionContent = this.textSection?.content_en;
+    this.companiesSectionContent = this.companiesSection?.content_en;
   }
 
   ngOnChanges(): void {
@@ -123,9 +123,9 @@ export class DynamicContentComponent
       (content: any) => content.content_type === 'companies'
     );
 
-    this.primarySectionContent = this.primarySection?.content_ar;
-    this.secondarySectionContent = this.secondarySection?.content_ar;
-    this.textSectionContent = this.textSection?.content_ar;
-    this.companiesSectionContent = this.companiesSection?.content_ar;
+    this.primarySectionContent = this.primarySection?.content_en;
+    this.secondarySectionContent = this.secondarySection?.content_en;
+    this.textSectionContent = this.textSection?.content_en;
+    this.companiesSectionContent = this.companiesSection?.content_en;
   }
 }
