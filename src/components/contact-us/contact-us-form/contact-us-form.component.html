@@ -1,0 +1,127 @@
+<section class="my-20 container">
+  <div class="section container grid grid-cols-1 md:grid-cols-3 py-10">
+    <div class="flex flex-col gap-5">
+      <h3 i18n class="text-3xl text-white">Communicate with us</h3>
+      <p i18n>
+        You can contact us and leave complaints, suggestions or inquiries you
+        want, and we will We will contact you as soon as possible
+      </p>
+      <div class="flex gap-3">
+        <span class="material-symbols-outlined text-white">
+          location_searching
+        </span>
+        <p i18n>
+          Kingdom of Saudi Arabia - Jeddah - Al-Zahraa District - Postal Code:
+          23522
+        </p>
+      </div>
+      <div class="flex gap-3">
+        <span class="material-symbols-outlined text-white"> call </span>
+        <p>00967775124874</p>
+      </div>
+    </div>
+    <div class="md:col-span-2 py-10 md:py-0">
+      <form
+        class="grid gap-5"
+        [formGroup]="contactForm"
+        (ngSubmit)="onSubmit()"
+      >
+        <div class="col-span-2 md:col-span-1">
+          <label i18n for="name">Name</label>
+          <input
+            id="name"
+            name="name"
+            placeholder="Name"
+            formControlName="name"
+          />
+          <div
+            *ngIf="name.invalid && (name.dirty || name.touched)"
+            class="w-100 py-2 container bg-pink-300 text-rose-700 mt-1 rounded"
+          >
+            <p *ngIf="name.errors?.['required']" i18n>Name is required</p>
+            <p *ngIf="name.errors?.['minlength']" i18n>Too short</p>
+          </div>
+        </div>
+        <div class="col-span-2 md:col-span-1">
+          <label i18n for="phone">Phone</label>
+          <input
+            id="phone"
+            name="phone"
+            i18n-placeholder
+            placeholder="Phone"
+            formControlName="phone"
+          />
+          <div
+            *ngIf="phone.invalid && (phone.dirty || phone.touched)"
+            class="w-100 py-2 container bg-pink-300 text-rose-700 mt-1 rounded"
+          >
+            <p *ngIf="phone.errors?.['required']" i18n>Phone is required</p>
+            <p *ngIf="phone.errors?.['minlength']" i18n>
+              Phone number consists of 10 digits
+            </p>
+            <p *ngIf="phone.errors?.['pattern']" i18n>
+              Enter a valid Saudi number
+            </p>
+          </div>
+        </div>
+        <div class="col-span-2 md:col-span-1">
+          <label i18n for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            i18n-placeholder
+            placeholder="Email"
+            formControlName="email"
+          />
+          <div
+            *ngIf="email.invalid && (email.dirty || email.touched)"
+            class="w-100 py-2 container bg-pink-300 text-rose-700 mt-1 rounded"
+          >
+            <p *ngIf="email.errors?.['required']" i18n>Email is required</p>
+            <p *ngIf="email.errors?.['email']" i18n>Email is not valid</p>
+          </div>
+        </div>
+        <div class="col-span-2 md:col-span-1">
+          <label i18n for="subject">Subject</label>
+          <input
+            id="subject"
+            name="subject"
+            i18n-placeholder
+            placeholder="Subject"
+            formControlName="subject"
+          />
+          <div
+            *ngIf="subject.invalid && (subject.dirty || subject.touched)"
+            class="w-100 py-2 container bg-pink-300 text-rose-700 mt-1 rounded"
+          >
+            <p *ngIf="subject.errors?.['required']" i18n>Subject is required</p>
+            <p *ngIf="subject.errors?.['minlength']" i18n>Too short</p>
+          </div>
+        </div>
+        <div class="col-span-2">
+          <label i18n for="message">Message</label>
+          <textarea
+            rows="6"
+            id="name"
+            name="message"
+            i18n-placeholder
+            placeholder="Message"
+            formControlName="message"
+          ></textarea>
+          <div
+            *ngIf="message.invalid && (message.dirty || message.touched)"
+            class="w-100 py-2 container bg-pink-300 text-rose-700 mt-1 rounded"
+          >
+            <p *ngIf="message.errors?.['required']" i18n>Message is required</p>
+            <p *ngIf="message.errors?.['minlength']" i18n>Too short</p>
+          </div>
+        </div>
+        <div class="col-span-2 flex justify-center">
+          <button i18n type="submit" [disabled]="!contactForm.valid">
+            Send
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
